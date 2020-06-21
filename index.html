@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta (charset="UTF-8")>
+    <title>title of the document</title>
+    <link href="https://vjs.zencdn.net/7.8.2/video-js.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <link href="css/reset.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <header>
+        <nav>
+            <img id="logo" src="assets/logo@2x.png" alt="logo">
+            <a href="darkmode.html">
+            <img id="switch" src="assets/switch@2x.png" alt="switch to nightmode">
+            </a>
+            <ul>
+                <li><a href="#">OVER ONS</a></li>
+                <li><a href="#">LESMATERIAAL</a></li>
+                <li><a href="#">CONTACT</a></li>
+            </ul>
+            <div class="clear"></div>
+        </nav>
+        <h1>Van beginner naar expert
+            <br>Het lesmateriaal brengt je verder</h1>
+        <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Donec id elit non mi porta gravida at eget metus. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+    </header>
+    <main>
+        <div class="thumbvak">
+            <div class="thumb">
+                <img class="lecosp" src="assets/leer@2x.png">
+                <h2 class="textmid">Leer</h2>
+            </div>
+            <div class="thumb">
+                <img class="lecosp" src="assets/codeer@2x.png">
+                <h2 class="textmid">Codeer</h2>
+            </div>
+            <div class="thumb">
+                <img class="lecosp" src="assets/speel@2x.png">
+                <h2 class="textmid">Speel</h2>
+            </div>
+            <div class="clear"></div>
+        </div>
+        
+        <div id="playvak">
+            <h2 class="playtitle">Playlist</h2>
+            <div id="accordion">
+                <h3>Algemene Introductie</h3>
+                <div id="panel">
+                   <div class="videovak">
+                   <video width="1089px" id="video-0"
+                    class="video-js"
+                    preload="auto"
+                    width="640"
+                    height="613"
+                    data-setup='{}'
+                  >
+                  <source src="https://player.vimeo.com/external/427391003.hd.mp4?s=bf9174b34753357f527c2753a295773a13e57cd5&profile_id=175">
+                  <p class="vjs-no-js">
+                      To view this video please enable JavaScript, and consider upgrading to a
+                      web browser that
+                      <a href="https://videojs.com/html5-video-support/" target="_blank"
+                        >supports HTML5 video</a
+                      >
+                    </p>
+                       </video>
+                       <div class="vidbtns">
+                       <a class="videobutton" id="rewind"><img class="backimg" src="/assets/backwards.png"></a>
+                       <a class="videobutton" id="playpause"><img class="playimg" src="/assets/playbutton.png"></a>
+                       <a class="videobutton" id="forward"><img class="forwardimg" src="/assets/forward.png"></a>
+                       </div>
+                       
+                   </div>
+                   <div id="dialog" title="Woehoe!!!">
+                    <p class="modaltext">Gefeliciteerd! Je hebt deze video afgekeken.<br> Je kunt nu doorgaan met de volgende video.</p>
+                    <img src="/assets/checkmark.png" alt="checkmark" class="modalpic">
+                  </div>
+                </div>
+                <h3>Workshop 1: Kleuren met code</h3>
+                <div id="panel">
+                    <div class="videovak">
+                    <video width="1089px" id="video-1"
+                    class="video-js"
+                    preload="auto"
+                    width="640"
+                    height="613"
+                    data-setup="{}"
+                  >
+                        <source src="https://player.vimeo.com/external/430269547.hd.mp4?s=634e737779790893f1cf7eba0a1695906899bb81&profile_id=174">
+                        <p class="vjs-no-js">
+                            To view this video please enable JavaScript, and consider upgrading to a
+                            web browser that
+                            <a href="https://videojs.com/html5-video-support/" target="_blank"
+                              >supports HTML5 video</a
+                            >
+                          </p>
+                    </video>
+                    <div class="vidbtns">
+                        <a class="videobutton" id="rewind"><img class="backimg" src="/assets/backwards.png"></a>
+                        <a class="videobutton" id="playpause"><img class="playimg" src="/assets/playbutton.png"></a>
+                        <a class="videobutton" id="forward"><img class="forwardimg" src="/assets/forward.png"></a>
+                        </div>
+                </div>
+                <div id="dialog" title="Woehoe!!!">
+                    <p class="modaltext">Gefeliciteerd! Je hebt deze video afgekeken.<br> Je kunt nu doorgaan met de volgende video.</p>
+                    <img src="/assets/checkmark.png" alt="checkmark" class="modalpic">
+                  </div>
+                </div>
+                <h3>Workshop 2: Vormen maken</h3>
+                <div id="panel">
+                    <div class="videovak">
+                    <video width="1089px" id="video-2"
+                    class="video-js"
+                    preload="auto"
+                    width="640"
+                    height="613"
+                    data-setup="{}"
+                  >                        
+                            <source src="https://player.vimeo.com/external/429911074.hd.mp4?s=fb6b77a179b0fe7dbb5bb2e3960bc600b8a1d6f1&profile_id=175">   
+                            <p class="vjs-no-js">
+                                To view this video please enable JavaScript, and consider upgrading to a
+                                web browser that
+                                <a href="https://videojs.com/html5-video-support/" target="_blank"
+                                  >supports HTML5 video</a
+                                >
+                              </p>
+                    </video>
+                    <div class="vidbtns">
+                        <a class="videobutton" id="rewind"><img class="backimg" src="/assets/backwards.png"></a>
+                        <a class="videobutton" id="playpause"><img class="playimg" src="/assets/playbutton.png"></a>
+                        <a class="videobutton" id="forward"><img class="forwardimg" src="/assets/forward.png"></a>
+                        </div>
+                    </div>
+                    <div id="dialog" title="Woehoe!!!">
+                        <p class="modaltext">Gefeliciteerd! Je hebt deze video afgekeken.<br> Je kunt nu doorgaan met de volgende video.</p>
+                        <img src="/assets/checkmark.png" alt="checkmark" class="modalpic">
+                      </div>
+                </div>
+                <h3>Workshop 3: Beweging</h3>
+                <div id="panel">
+                    <div class="videovak">
+                    <video width="1089px" id="video-3"
+                    class="video-js"
+                    preload="auto"
+                    width="640"
+                    height="613"
+                    data-setup="{}"
+                  >
+                            <source src="https://player.vimeo.com/external/429221278.hd.mp4?s=c595b66a05969eab4d1564b4c9c2b6406f365119&profile_id=174">
+                            <p class="vjs-no-js">
+                                To view this video please enable JavaScript, and consider upgrading to a
+                                web browser that
+                                <a href="https://videojs.com/html5-video-support/" target="_blank"
+                                  >supports HTML5 video</a
+                                >
+                              </p>
+                    </video>
+                    <div class="vidbtns">
+                        <a class="videobutton" id="rewind"><img class="backimg" src="/assets/backwards.png"></a>
+                        <a class="videobutton" id="playpause"><img class="playimg" src="/assets/playbutton.png"></a>
+                        <a class="videobutton" id="forward"><img class="forwardimg" src="/assets/forward.png"></a>
+                        </div>
+                </div>
+                <div id="dialog" title="Woehoe!!!">
+                    <p class="modaltext">Gefeliciteerd! Je hebt deze video afgekeken.<br> Je kunt nu doorgaan met de volgende video.</p>
+                    <img src="/assets/checkmark.png" alt="checkmark" class="modalpic">
+                  </div>
+                </div>
+                <h3>Workshop 4: Variabelen gebruiken</h3>
+                <div id="panel">
+                    <div class="videovak">
+                    <video width="1089px" id="video-4"
+                    class="video-js"
+                    preload="auto"
+                    width="640"
+                    height="613"
+                    data-setup="{}"
+                  >
+                            <source src="https://player.vimeo.com/external/430281824.hd.mp4?s=11f9b01d1e43ffdc32d63c1a82c4734862d156e0&profile_id=175">
+                            <p class="vjs-no-js">
+                                To view this video please enable JavaScript, and consider upgrading to a
+                                web browser that
+                                <a href="https://videojs.com/html5-video-support/" target="_blank"
+                                  >supports HTML5 video</a
+                                >
+                              </p>
+                    </video>
+                    <div class="vidbtns">
+                        <a class="videobutton" id="rewind"><img class="backimg" src="/assets/backwards.png"></a>
+                        <a class="videobutton" id="playpause"><img class="playimg" src="/assets/playbutton.png"></a>
+                        <a class="videobutton" id="forward"><img class="forwardimg" src="/assets/forward.png"></a>
+                   </div>
+                    </div>
+                    <div id="dialog" title="Woehoe!!!">
+                        <p class="modaltext">Gefeliciteerd! Je hebt deze video afgekeken.<br> Je kunt nu doorgaan met de volgende video.</p>
+                        <img src="/assets/checkmark.png" alt="checkmark" class="modalpic">
+                      </div>
+                   </div>
+              </div>
+        </div>
+
+        <h4 class="lighth4">Support</h4>
+        <p class="p2">Onze studenten staan voor je klaar. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. </p>
+        <a href="#" class="contact">NAAR CONTACT</a>
+        <div class="clear"></div>
+
+        <div class="scrolling-wrapper">
+                <div class="students">
+                    <img class="studentfoto" src="img/alina-kovalchuk-1143928-unsplash@2x.png" alt="foto van alina">
+                    <div class="naamvak">
+                        <h4 class="namen">Alina Kovalchuk</h4>
+                        <h5>Hoofd support</h5>
+                        <a href="#" class="mailbutton">Mail</a>
+                    </div>
+                </div>
+                <div class="students">
+                    <img class="studentfoto" src="img/giorgio-encinas-781653-unsplash@2x.png" alt="foto van giorgio">
+                    <div class="naamvak">
+                        <h4 class="namen">Giorgio Encinas</h4>
+                        <h5>Hoofd support</h5>
+                        <a href="#" class="mailbutton">Mail</a>
+                    </div>
+                </div>
+                <div class="students">
+                    <img class="studentfoto" src="img/kal-visuals-592091-unsplash@2x.png" alt="foto van kal">
+                    <div class="naamvak">
+                        <h4 class="namen">Kal Visuals</h4>
+                        <h5>Hoofd support</h5>
+                        <a href="#" class="mailbutton">Mail</a>
+                    </div>
+                </div>
+                <div class="students">
+                    <img class="studentfoto" src="img/norman-toth-177973-unsplash@2x.png" alt="foto van norman">
+                    <div class="naamvak">
+                        <h4 class="namen">Norman Toth</h4> 
+                        <h5>Hoofd support</h5>
+                        <a href="#" class="mailbutton">Mail</a>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+
+        <footer>
+            <h1 class="footertitel">Klaar voor de 
+                volgende uitdaging?</h1>
+            <p class="footertext">In ons expertprogramma vind je lessen voor gevorderden </p>
+            <a class="footerbutton" href="#">KOM MAAR OP</a>
+            </footer>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script> 
+    <script src="https://vjs.zencdn.net/6.4.0/video.js"></script>
+    <script src="/js/light.js"></script>
+</body>
+</html>
+ 
